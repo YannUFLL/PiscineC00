@@ -6,7 +6,7 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 11:49:57 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/16 20:13:29 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/17 12:35:00 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,8 @@ void	ft_main_print(int nbr)
 		nbr = ft_print(nbr, (x / 10000000));
 	while (nbr >= 10)
 		nbr = ft_print(nbr, (x / 100000000));
-	ft_putchar(nbr + 48);
+	if (nbr != 0)
+		ft_putchar(nbr + 48);
 }
 
 void	ft_putnbr(int nbr)
