@@ -6,7 +6,7 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 14:47:25 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/16 11:43:37 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/17 11:35:56 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,11 @@ void	ft_print_comb2(void)
 		b = a + 1;
 		while (b <= 99)
 		{	
-			ft_putchar(' ');
 			ft_affi_valeurs(a);
 			ft_putchar(' ');
 			ft_affi_valeurs(b);
-			if (a < 98 || b < 99)
+			ft_putchar(' ');
+			if (a < 98)
 				ft_putchar(',');
 			b++;
 		}
